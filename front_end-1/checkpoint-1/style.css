@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Roboto+Mono:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+ box-sizing: border-box;
+ 
+ }
+
+ .cabeçalho {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 50px;
+     background-color:  rgb(110, 110, 110);
+ }
+
+ .cabeçalho img {
+
+    height: 75px;
+    
+
+ }
+
+.cabeçalho a {
+    margin: 20px;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.banner {
+    height: 700px;
+    background-image: url(https://www.loudmagazine.net/wp-content/uploads/2019/07/Deftones-Frank-Maddocks.jpg);
+    background-size: cover ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+.banner p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+  
+       
+}
+
+.integrantes-da-banda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding-top: 150px;
+}
+
+.div-integrantes-da-banda {
+    position: relative;
+}
+
+.div-integrantes-da-banda .titulo-section {
+
+    position: absolute;
+    top: -60px;
+    color: black;
+}
+
+.card1 {
+    width: 400px;
+    background-color: rgb(110, 110, 110);
+}
+
+.card1 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card2 {
+    width: 400px;
+    background-color:  rgb(110, 110, 110);
+   
+}
+
+.card2 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+    
+
+
+.card3 {
+    width: 400px;
+    background-color:  rgb(110, 110, 110);
+}
+
+.card3 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.card4 {
+    width: 400px;
+    background-color:  rgb(110, 110, 110);
+}
+
+.card4 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.integrantes-da-banda div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    transition: 0.5s;
+    color: white;
+    
+}
+
+.integrantes-da-banda div:hover {
+    transform: scale(1.02);
+}
+
+.integrantes-da-banda img {
+
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+
+}
+
+
+h2 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.nomes {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.video {
+    
+    display: flex;
+   justify-content: center;
+    gap: 20px;
+
+}
+
+.titulo-video {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+.rodape {
+    margin-top: 50px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(110, 110, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.rodape div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rodape img {
+    filter: invert(1);
+
+}
+
+.rodape img:hover {
+    transform: scale(1.02);
+}
+
+.github a {
+
+   text-decoration: none;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 600;
+   font-size: 17px;
+   transition: 0.5s;
+}
+
+ 
+.github a:hover {
+    transform: scale(1.02);
+   
+}
+
+
+@media (max-width:768px) {
+    .cabeçalho { flex-direction: column; gap: 15px;}
+    .banner { background-size: 850px; height:450px;}
+    iframe {width: 500px ; height: 300px;}
+    
+
+}
+
+@media (max-width:520px) {
+    iframe { width: 300px ; height: 200px;}
+    .cabeçalho a { display: flex; flex-direction: column;}
+    .banner p { font-size: 13px;}
+    .card1 { width: 300px;}
+    .card2 { width: 300px;}
+    .card3 { width: 300px;}
+    .card4 { width: 300px;}
+    .card1 img { width: 300px;}
+    .card2 img { width: 300px;}
+    .card3 img { width: 300px;}
+    .card4 img { width: 300px;}
+    
+    
+
+}
