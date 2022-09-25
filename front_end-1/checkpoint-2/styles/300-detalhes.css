@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Roboto+Mono:wght@400;600;700&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+}
+
+#navbarNav {
+    justify-content: end;
+}
+
+.inicio {
+    color: #E51B3E !important;
+}
+
+.bnt-novo { 
+    background-color:#FFFFFF;
+    border: none;
+    color: var(--bs-nav-link-color);
+}
+
+.start {
+    width: 574px;
+    height: 59px;
+    left: 426px;
+    top: 735px;
+    background: #33BB69;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    color:#FFFFFF;
+}
+
+.banner-detalhes {
+    width: 100%;
+    height: 700px;
+    background-image: url(https://wallpapercave.com/wp/wp2642948.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.primeira-section {
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 70px ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.primeira-section p {
+    text-align: justify;
+}
+
+.primeira-section h1 {
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.primeira-section .autores  {
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 100px ;
+    
+    
+}
+
+.primeira-section .autores a {
+    text-decoration: none;
+    color: #0085FF ;
+}
+
+
+.segunda-section {
+    padding-top: 50px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.segunda-section iframe {
+    border-radius: 20px;
+   
+}
+
+
+
+
+ .segunda-section h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.rodapé {
+    margin-top: 32px;
+    width: 100%;
+    height: 300px;
+    background-color:  #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.rodapé .alunos {
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+     
+     
+}
+
+.rodapé .alunos .link-alunos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.rodapé .alunos .link-alunos img{
+    transition: 0.5s;
+}
+
+.rodapé .alunos .link-alunos img:hover {
+    transform: scale(1.5)
+
+}
+
+.rodapé .alunos .link-alunos div {
+    display: flex;
+    gap: 20px;
+}
+
+.rodapé .alunos h1 {
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+   
+
+
+}
+
+.rodapé .alunos p {
+    font-size: 16px;
+    color: #8b8b8b;
+    font-weight: 400;
+}
+
+
+.rodapé .checkpoint-data {
+    display: flex;
+    justify-content: center;
+}
+
+.rodapé .checkpoint-data h2 {
+    color: #8b8b8b ;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+@media (max-width: 1800px) {
+
+    
+    iframe {width: 1600px ; height: 700px;}
+    
+}
+
+@media (max-width: 1700px) {
+    iframe {width: 1500px ; height: 700px;}
+}
+
+@media (max-width: 1600px) {
+    iframe {width: 1400px ; height: 700px;}
+    
+}
+
+@media (max-width: 1500px) {
+    iframe {width: 1280px ; height: 720px;}
+    
+}
+
+@media (max-width: 1440px) {
+    iframe {width: 1200px ; height: 700px;}
+    .banner-detalhes {height: 600px;}
+    
+}
+
+@media (max-width: 1340px) {
+    iframe {width: 1100px ; height: 600px;}
+    
+}
+
+@media (max-width: 1240px) {
+    iframe {width: 1000px ; height: 600px;}
+    
+}
+
+@media (max-width: 1140px) {
+    iframe {width: 900px ; height: 500px;}
+    
+}
+
+@media (max-width: 1000px) {
+    iframe {width: 800px ; height: 500px;}
+    
+}
+
+
+@media (max-width: 900px) {
+    iframe {
+        width: 700px;
+        height: 400px;
+    }
+
+   
+
+   
+    .rodapé .alunos .link-alunos h1 {
+        font-size: 13px;
+    }
+
+    .rodapé .alunos .link-alunos p {
+        font-size: 10px;
+    }
+
+    .rodapé {
+        gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 400px;
+    }
+
+    .rodapé .checkpoint-data h2 {
+        font-size: 13px
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    iframe {width: 600px ; height: 300px;}
+
+}
+
+
+@media (max-width: 800px) {
+
+    iframe {width: 500px ; height: 250px;}
+
+}
+
+@media (max-width: 600px) {
+    .segunda-section { padding-left: 50px; padding-right: 50px}
+    .primeira-section { padding-left: 50px; padding-right: 50px;}
+    iframe {width: 400px ; height: 200px;}
+    .rodapé .alunos .link-alunos h1 {font-size: 13px;}
+    .rodapé .alunos .link-alunos p {font-size: 10px;}
+    .alunos {flex-wrap: wrap;}
+    .rodapé { height: 420px;}
+
+}
+@media (max-width: 580px)  {
+
+    .rodapé .alunos {
+        gap: 5px;
+    }
+
+    .rodapé .alunos .link-alunos { gap: 2px;}
+}
+
+@media (max-width: 500px) {
+
+    iframe {width: 350px ; height: 200px;}
+    
+
+}
+
+
+@media (max-width: 425px) {
+    .segunda-section { padding-left: 30px; padding-right: 30px}
+    .primeira-section { padding-left: 30px; padding-right: 30px;}
+    iframe {width: 300px ; height: 200px;}
+
+}
+
+@media (max-width: 425px) {
+    iframe {width: 270px ; height: 170px;}
+   
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/DHflix.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1020300955411025980/1023006764792299550/assistir-filme.png" type="image/x-icon">
+  <title>DH Flix | Home</title>
+</head>
+
+<body id="homes">
+  <header id="home">
+    <div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="../img/logo.svg" alt="logo Digital House"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icon"></span>
+          </button>
+          <div class="collapse navbar-collapse menu" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active inicio" aria-current="page" href="#homes">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cards">Lançamentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <button id="login" type="button" class="btn__banner mx-auto d-block align-center bnt-novo"
+                    data-bs-toggle="modal" data-bs-target="#modalForm">
+                    Login
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-lg modal-sm d-flex flex-column min-vw-50 min-vh-100 vh-100 vw-100">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="../img/logo.svg" class="img-fluid align-items-center" alt="Logo da digital house" />
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form__mb-3" id="form">
+              <div class="mb-3 form">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control" id="username" name="username"
+                  placeholder="Informe o seu email" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Senha</label>
+                <input type="password" class="form-control" id="password" name="password"
+                  placeholder="Informe a sua senha" />
+              </div>
+            </div>
+            <div class="modal-footer d-block text-center align-items-center justify-content-center">
+              <button type="submit" class="btn__login btn-primary float-none start"> <a class="start"
+                  href="../pages/DHflix.html">
+                  Entrar</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fim do modal-->
+  <main>
+    <section class="banner-inicio">
+      <div class="inicial">
+        <h1 class="text1 animate__animated animate__zoomIn">DH Flix</h1>
+        <p class="text2 animate__animated animate__fadeInUp">Confira a maior coletânea de filmes que a Digital House tem
+          a te oferecer</p>
+        <div class="bnt-select ">
+          <button class="btn-explorer animate__animated animate__fadeInUp"> <a class="explorar" href="#cards">Explorar</a>
+                      </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="lançamentos">
+      <h1>Lançamentos</h1>
+    </div>
+
+    <section id="cards" class="cards">
+
+
+      
+
+      
+
+      <div class="card">
+       
+
+        <div class="card-image">
+               
+          <img src="https://wallpaperaccess.com/full/1673052.jpg" alt="" >
+        </div>
+
+          <div class="card-conteudo">
+            <h1>Batman Begins</h1>
+            <p>Marcado pelo assassinato de seus pais quando ainda era criança, 
+              o milionário Bruce Wayne decide viajar pelo mundo em busca de encontrar meios que lhe permitam combater a injustiça e provocar medo em seus adversários.</p>
+            <a href="../pages/batman-begins-detalhes.html"><button>Abrir</button></a>
+          </div>
+
+      </div>
+     
+
+      <div class="card">
+
+        <div class="card-image">
+
+          <img src="https://www.aplateia.com.br/wp-content/uploads/2020/08/coco-scaled.jpg" alt="">
+        </div>
+        
+          <div class="card-conteudo">
+            <h1>Viva – A Vida É uma Festa</h1>
+            <p>Apesar da proibição da música por gerações de sua família, 
+              o jovem Miguel sonha em se tornar um músico talentoso como seu ídolo Ernesto de la Cruz.
+               Para provar seu talento,Miguel se encontra na deslumbrante e colorida Terra dos Mortos.</p>
+            <a href="../pages/viva.html"><button>Abrir</button></a>
+          </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-image">
+
+          <img src="https://focalizando.com.br/sites/default/files/inline-images/1398b5c770.jpg" alt="">
+        </div>
+       
+          <div class="card-conteudo">
+            <h1>Minha Mãe É uma Peça 3</h1>
+            <p>Dona Hermínia precisa se redescobrir porque seus filhos estão formando novas famílias. 
+              Marcelina está grávida e Juliano vai casar. Para completar as confusões, Carlos Alberto, seu ex-marido,
+              agora resolve se mudar para o apartamento ao lado.</p>
+              <a href="../pages/minha-mae-detalhes.html"><button>Abrir</button></a>
+          </div>
+        
+      </div>
+
+      <div class="card">
+
+        <div class="card-image">
+
+          <img src="https://recreio.uol.com.br/media/_versions/disney/divertidamente_capa_widelg.png" alt="">
+        </div>
+        
+          <div class="card-conteudo">
+            
+            <h1>Divertida Mente</h1>
+            <p>Com a mudança para uma nova cidade, as emoções de Riley, que tem apenas 11 anos de idade, 
+              ficam extremamente agitadas. Uma confusão na sala de controle do seu cérebro deixa a Alegria e a Tristeza de fora, 
+              afetando a vida de Riley radicalmente.</p>
+              <a href="../pages/divertidamente.html"><button>Abrir</button></a>
+          </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-image">
+
+          <img src="https://images8.alphacoders.com/442/442065.jpg" alt="">
+        </div>
+        
+          <div class="card-conteudo">
+            <h1>300</h1>
+            <p>Em 480 A.C., existe uma guerra entre a Pérsia, liderada pelo rei Xerxes, e a Grécia. Na batalha de Thermopylae, Leônidas, 
+              rei da cidade grega de Sparta, lidera seu guerreiros em desvantagem contra o massivo exército persa.</p>
+              <a href="../pages/300-detalhes.html"><button>Abrir</button></a>
+          </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-image">
+
+          <img src="https://2.bp.blogspot.com/-CzQ1SKLspyw/Wr7Dhvn8MlI/AAAAAAAAJoo/RCRn-CuZpwkNzJQpbmI8uSrnMA1jUNCdQCLcBGAs/s1600/esposa-mentirinha.jpg" alt="">
+        </div>
+        
+          <div class="card-conteudo">
+            <h1>Esposa de Mentirinha</h1>
+            <p>Infeliz em sua tentativa de casamento, Danny passa a vivenciar relacionamentos sem compromisso para driblar a carência. 
+              Assim, ele toca sua vida como cirurgião plástico bem-sucedido,
+               tendo sua melhor amiga Katherine, como fiel escudeira.</p>
+               <a href="../pages/casamento-mentirinha-detalhes.html"><button>Abrir</button></a>
+          </div>
+
+      </div>
+      
+    
+     
+    </section>
+  </main>
+  <footer class="rodapé" id="contato">
+
+    <div class="alunos">
+      <div class="link-alunos">
+        <h1>Isaque Rodrigues</h1>
+        <p>responsavel pelo desenvolvimendo da <br> pagina detalhes, footer  <br>  e cards da pagina principal</p>
+        <div>
+          <img src="../img/logo-linkedin.svg" alt="lodo do linkedin">
+          <a href="https://github.com/IsaqueRT" target="_blank"><img src="../img/logo-github.svg"
+              alt="logo do github"></a>
+        </div>
+      </div>
+
+      <div class="link-alunos">
+        <h1>Juliana Costa Rodrigues</h1>
+        <p>responsavel pelo desenvolvimendo do <br> banner inicial, cabeçalho e formulario de login <br> com o uso de bootstrap</p>
+        <div>
+          <a href="https://www.linkedin.com/in/juliana-costa-rodrigues-098392144/" target="_blank"><img
+              src="../img/logo-linkedin.svg" alt="lodo do linkedin"></a>
+          <a href="https://github.com/JulianaCRodrigues" target="_blank"><img src="../img/logo-github.svg"
+              alt="lodo do github"></a>
+        </div>
+
+      </div>
+
+      <div class="link-alunos">
+        <h1>Thalita Rospendowski</h1>
+        <p>responsavel pelo desenvolvimendo das <br> paginas de detalhes dos filmes <br> Minha mãe é uma peça e  Esposa de Mentirinha</p>
+        <div>
+          <a href="" target="_blank"><img src="../img/logo-linkedin.svg" alt="logo do linkedin"></a>
+          <a href="" target="_blank"><img src="../img/logo-github.svg" alt="logo do github"></a>
+        </div>
+      </div>
+    </div>
+    <div class="checkpoint-data">
+      <h2>Checkpoint 2 desenvolvido em 2022</h2>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+#home {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 2;
+}
+
+.menu {
+    justify-content: end;
+}
+
+.inicio {
+    color: #E51B3E !important;
+}
+
+.bnt-novo {
+    background-color: #FFFFFF;
+    border: none;
+    color: var(--bs-nav-link-color);
+}
+
+.start {
+    width: 574px;
+    height: 59px;
+    left: 426px;
+    top: 735px;
+    background: #33BB69;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    color: #FFFFFF;
+}
+
+.banner-inicio {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Rectangle_2.svg);
+    background-attachment: fixed;
+}
+
+.banner-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.text1 {
+    font-family: 'Roboto';
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 84px;
+    color: #E51B3E;
+    padding-left: 30px;
+    text-align: left;
+
+}
+
+.text2 {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 30px;
+    padding-right: 15px;
+    text-align: left;
+    animation-delay: 1s;
+}
+
+.btn-explorer {
+    width: 322px;
+    height: 71px;
+    left: 559px;
+    top: 552px;
+    background: rgba(51, 187, 105, 0.05);
+    border: 1px solid #33BB69;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 30px;
+    animation-delay: 1.5s;
+}
+
+.explorar {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.lançamentos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    
+}
+
+.lançamentos h1 {
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px ; 
+    gap: 30px;
+    justify-content: center;
+}
+
+.cards .card {
+    width: 500px;
+    height: 600px;
+    border: none;
+    transition: 0.5s;
+    
+
+}
+
+.cards .card:hover {
+    transform: scale(1.02);
+}
+
+.cards .card .card-image {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 12px ;
+    border-top-right-radius: 12px ;
+    overflow: hidden;
+    
+   
+   
+    
+}
+
+.card-image img {
+
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+
+
+
+#cards .card .card-conteudo {
+    width: 100%;
+    height: 300px;
+    background-color:#F4F4F4;
+    border-radius: 12px;
+    margin-top: -15px;
+    box-shadow: 1px 7px 10px  rgba(0, 0, 0, 0.281);
+    padding: 26px;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+#cards .card .card-conteudo h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#cards .card .card-conteudo p {
+   text-align: justify;
+   font-weight: 300;
+   font-size: 18px;
+   color: rgba(0, 0, 0, 0.767);
+}
+
+#cards .card .card-conteudo button {
+    border: none;
+    background-color: #33BB69;
+    color: white;
+    padding: 16px;
+    width: 100%;
+    border-radius: 10px;
+    
+    
+}
+
+#cards .card .card-conteudo button:hover {
+    background-color:#1d9c50 ;
+    cursor: pointer;
+}
+
+
+
+
+.rodapé {
+    margin-top: 32px;
+    width: 100%;
+    height: 300px;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.rodapé .alunos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.rodapé .alunos .link-alunos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-items: center;
+}
+
+.rodapé .alunos .link-alunos img {
+    transition: 0.5s;
+}
+
+.rodapé .alunos .link-alunos img:hover {
+    transform: scale(1.5)
+}
+
+.rodapé .alunos .link-alunos div {
+    display: flex;
+    gap: 20px;
+}
+
+.rodapé .alunos h1 {
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+
+
+
+}
+
+.rodapé .alunos p {
+    font-size: 16px;
+    color: #8b8b8b;
+    font-weight: 400;
+}
+
+
+.rodapé .checkpoint-data {
+    display: flex;
+    justify-content: center;
+}
+
+.rodapé .checkpoint-data h2 {
+    color: #8b8b8b;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media (max-width: 1600px) {
+
+    .cards .card { width: 400px; height: 500px;}
+
+}
+
+@media (max-width: 900px) {
+    iframe {
+        width: 700px;
+        height: 400px;
+    }
+
+    .alunos {
+        flex-wrap: wrap;
+        
+    }
+
+   
+    .rodapé .alunos .link-alunos h1 {
+        font-size: 13px;
+    }
+
+    .rodapé .alunos .link-alunos p {
+        font-size: 10px;
+    }
+
+    .rodapé {
+        gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 400px;
+    }
+
+    .rodapé .checkpoint-data h2 {
+        font-size: 13px
+    }
+}
+
+@media (max-width: 580px)  {
+
+    .rodapé .alunos {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #cards .card { width: 350px; height: 600px;}
+    .lançamentos h1 {font-size: 42px;}
+    #cards .card .card-conteudo p {font-size: 15px !important;}
+    #cards .card .card-conteudo h1 { font-size: 20px;}
+}
+
+@media (max-width: 400px)  {
+    #cards .card { width: 300px; height: 600px;}
+    .btn-explorer {width: 250px; font-size: 20px;}
+    #cards .card .card-conteudo { padding-left: 10px; padding-right: 10px;}
+}
+
+@media (max-width: 372px) {
+    
+    .rodapé .alunos .link-alunos {gap: 1px;}
+    
+}
