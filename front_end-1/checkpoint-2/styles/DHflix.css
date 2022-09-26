@@ -22,7 +22,7 @@
 }
 
 .start {
-    width: 574px;
+    width: 80%;
     height: 59px;
     left: 426px;
     top: 735px;
@@ -38,6 +38,9 @@
     height: 100vh;
     background-image: url(../img/Rectangle_2.svg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .banner-inicio {
@@ -97,21 +100,26 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-
+   padding-top: 60px;
     
 }
 
 .lançamentos h1 {
     font-weight: 700;
     font-size: 64px;
+   
 }
 
-.cards {
+#cards {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px ; 
     gap: 30px;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    
 }
 
 .cards .card {
@@ -301,6 +309,16 @@
         font-size: 13px
     }
 }
+
+
+@media (max-width: 991px) {
+    #login {
+        margin-left: 0 !important
+    }
+
+ 
+}
+
 
 @media (max-width: 580px)  {
 
