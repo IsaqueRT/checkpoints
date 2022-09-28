@@ -33,10 +33,11 @@
     color: #FFFFFF;
 }
 
+
 .banner-inicio {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/Rectangle_2.svg);
+    background-image: url(../img/Rectangle\ 2.svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +50,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 .text1 {
@@ -60,19 +60,16 @@
     color: #E51B3E;
     padding-left: 30px;
     text-align: left;
-
 }
 
 .text2 {
     color: #FFFFFF;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
-    line-height: 28px;
     padding-left: 30px;
     padding-right: 15px;
-    text-align: left;
+    text-align: center;
     animation-delay: 1s;
 }
 
@@ -96,19 +93,19 @@
     color: #FFFFFF;
 }
 
-.lançamentos {
+#lancamentos .title-card {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-   padding-top: 60px;
-    
+    padding-top: 80px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    margin: 40px 0px;
+    color: #000000;
+  
 }
 
-.lançamentos h1 {
-    font-weight: 700;
-    font-size: 64px;
-   
-}
 
 #cards {
     display: flex;
@@ -117,9 +114,7 @@
     gap: 30px;
     justify-content: center;
     padding-left: 20px;
-    padding-right: 20px;
-   
-    
+    padding-right: 20px;   
 }
 
 .cards .card {
@@ -127,8 +122,6 @@
     height: 600px;
     border: none;
     transition: 0.5s;
-    
-
 }
 
 .cards .card:hover {
@@ -138,40 +131,31 @@
 .cards .card .card-image {
     width: 100%;
     height: 300px;
-    border-top-left-radius: 12px ;
-    border-top-right-radius: 12px ;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     overflow: hidden;
-    
-   
-   
-    
 }
 
 .card-image img {
-
     width: 100%;
     height: 300px;
     object-fit: cover;
-
 }
-
-
 
 
 #cards .card .card-conteudo {
     width: 100%;
     height: 300px;
-    background-color:#F4F4F4;
+    background-color: #F4F4F4;
     border-radius: 12px;
     margin-top: -15px;
-    box-shadow: 1px 7px 10px  rgba(0, 0, 0, 0.281);
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.281);
     padding: 26px;
     padding-left: 35px;
     padding-right: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
 }
 
 #cards .card .card-conteudo h1 {
@@ -180,10 +164,10 @@
 }
 
 #cards .card .card-conteudo p {
-   text-align: justify;
-   font-weight: 300;
-   font-size: 18px;
-   color: rgba(0, 0, 0, 0.767);
+    text-align: justify;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.767);
 }
 
 #cards .card .card-conteudo button {
@@ -193,17 +177,12 @@
     padding: 16px;
     width: 100%;
     border-radius: 10px;
-    
-    
 }
 
 #cards .card .card-conteudo button:hover {
-    background-color:#1d9c50 ;
+    background-color: #1d9c50;
     cursor: pointer;
 }
-
-
-
 
 .rodapé {
     margin-top: 32px;
@@ -213,23 +192,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
 .rodapé .alunos {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .rodapé .alunos .link-alunos {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     justify-items: center;
+    text-align: justify;
 }
 
 .rodapé .alunos .link-alunos img {
@@ -249,9 +226,6 @@
     font-size: 24px;
     color: white;
     font-weight: 400;
-
-
-
 }
 
 .rodapé .alunos p {
@@ -275,7 +249,10 @@
 
 @media (max-width: 1600px) {
 
-    .cards .card { width: 400px; height: 500px;}
+    .cards .card {
+        width: 400px;
+        height: 500px;
+    }
 
 }
 
@@ -287,10 +264,10 @@
 
     .alunos {
         flex-wrap: wrap;
-        
+
     }
 
-   
+
     .rodapé .alunos .link-alunos h1 {
         font-size: 13px;
     }
@@ -311,39 +288,84 @@
     }
 }
 
+@media (max-width: 580px) {
+
+    .rodapé .alunos {
+        gap: 5px;
+    }
+
+    #lancamentos .title-card {
+               
+        font-size: 40px;
+        font-weight: 800;
+
+    }
+
+}
 
 @media (max-width: 991px) {
     #login {
         margin-left: 0 !important
     }
 
- 
-}
-
-
-@media (max-width: 580px)  {
-
-    .rodapé .alunos {
-        gap: 5px;
-    }
+ .start {
+    width: 200px;
+ }
 }
 
 @media (max-width: 500px) {
 
-    #cards .card { width: 350px; height: 600px;}
-    .lançamentos h1 {font-size: 42px;}
-    #cards .card .card-conteudo p {font-size: 15px !important;}
-    #cards .card .card-conteudo h1 { font-size: 20px;}
+    #lancamentos .title-card {
+               
+        font-size: 40px;
+
+    }
+
+    #cards .card {
+        width: 350px;
+        height: 600px;
+    }
+
+    .lançamentos h1 {
+        font-size: 42px;
+    }
+
+    #cards .card .card-conteudo p {
+        font-size: 15px;
+    }
+
+    #cards .card .card-conteudo h1 {
+        font-size: 20px;
+    }
 }
 
-@media (max-width: 400px)  {
-    #cards .card { width: 300px; height: 600px;}
-    .btn-explorer {width: 250px; font-size: 20px;}
-    #cards .card .card-conteudo { padding-left: 10px; padding-right: 10px;}
+@media (max-width: 400px) {
+    #cards .card {
+        width: 300px;
+        height: 600px;
+    }
+
+    .btn-explorer {
+        width: 250px;
+        font-size: 20px;
+    }
+
+    #cards .card .card-conteudo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+  
+
 }
 
-@media (max-width: 388px) {
-    
-    .rodapé .alunos .link-alunos {gap: 1px;}
-    
+@media (max-width: 424px) {
+      .rodapé .alunos .link-alunos {gap: 1px;}
 }
+
+
+@media (max-width: 300px) {
+
+    #cards .card .card-conteudo p {font-size: 12px;}
+}
+ 
